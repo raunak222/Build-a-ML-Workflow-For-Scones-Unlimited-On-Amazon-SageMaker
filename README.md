@@ -2,11 +2,10 @@
 ### This project builds and deploys an image classification model for Scones Unlimited
 ### The project is divided into the following steps:
 
-Data staging
-Model training and deployment
-Lambdas
-Step Functions
-Data Staging
+* Data staging
+* Model training and deployment
+* Lambdas
+* Step Functions
 
 The first step is to stage the data. This involves uploading the scone images to an Amazon S3 bucket. 
 
