@@ -18,11 +18,12 @@ The model is then deployed as an Amazon SageMaker endpoint.
 
 Lambdas
 
-Step 1 The serializeImageData Lambda Function  takes the address of an image hosted in S3, and returns a serialized JSON object.
+Step 1 The serializeImageData Lambda Function  takes the address of an image hosted in S3, and returns a serialized JSON object. <br />
 
-Step 2 The Image-Classification Lambda Function  accepts the JSON object obtained from step 1 and sends it to an endpoint, collecting inferences as a JSON object.
+Step 2 The Image-Classification Lambda Function  accepts the JSON object obtained from step 1 and sends it to an endpoint, collecting inferences as a JSON object.<br />
 
-The Filter Low Confidence Inferences Lambda Function takes the inference data from step 2, and filters only the images that meet the pre-defined threshold.
+The Filter Low Confidence Inferences Lambda Function takes the inference data from step 2, and filters only the images that meet the pre-defined threshold. <br />
+
 Building a State Machine via AWS Step Functions
 
 The final step is to create a Step Functions workflow. This workflow orchestrates the entire ML workflow, from data staging to model deployment.
