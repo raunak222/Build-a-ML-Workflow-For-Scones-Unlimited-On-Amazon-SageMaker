@@ -25,7 +25,7 @@ Building a State Machine via AWS Step Functions
 
 The final step is to create a Step Functions workflow. This workflow orchestrates the entire ML workflow, from data staging to model deployment.
 
-![Step Functions Graph](step_function_1.PNG)
+![Step Functions Graph](images/step_function_1.PNG)
 
 Running the Project
 
